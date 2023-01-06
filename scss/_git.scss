@@ -1,0 +1,48 @@
+.git_cal{
+    color: white;
+    
+    .git_head{
+        
+        color: white;
+        text-align: center;
+        margin-bottom: 2.5rem;
+    }
+    .calendar{
+        // width: 100%;
+        background-color: #181818;
+        color: white;
+        border: 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        height: auto;
+    }
+    .js-calendar-graph{
+        width: 100%;
+        display: grid;
+        justify-content: center;
+    }
+    .js-calendar-graph-svg{
+        margin-top: 1rem;
+    }
+    .position-relative{
+        border: 0;
+    }
+    .contrib-column{
+        border: 0;
+    }
+    .contrib-number{
+        color: white;
+    }
+    .text-muted{
+        color: #838f8f;
+    }
+    .ContributionCalendar-label{
+        color: #838f8f;
+    }
+    .px-md-5{
+        margin-bottom: 5px;
+    }
+}
+.calendar{
+    min-height: auto;
+}

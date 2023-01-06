@@ -1,0 +1,167 @@
+.about {
+  .title__container{
+    display: block;
+    .discription{
+      margin: auto;
+      width: 70%;
+    }
+  }
+  .education{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0px;
+      align-items: center;
+      position: relative;
+      
+      .fortwopart{
+        display: grid;
+        grid-template-columns: 3fr, 1fr;
+        justify-content: space-between;
+        .image{
+          // margin-bottom: 20px;
+        }
+        .sub-logo-sec{
+          display: flex;
+          flex-direction: column;
+          .name_course{
+            margin-bottom: 5px;
+          }
+        }
+
+        .image, .image+div {
+          display: flex;
+          justify-content: center;
+          img {
+            height: 10rem;
+            width: 15rem;
+            object-fit: cover;
+          }
+        }
+        .play {
+          position: absolute;
+          top: 30%;
+          cursor: pointer;
+          i {
+            @include gradientText;
+            font-size: 10rem;
+          }
+        }
+      }
+      
+      
+    }
+  }
+  
+}
+
+
+.about_card {
+  position: relative;
+  .about_container {
+    display: flex;
+    color: white;
+    gap: 2rem;
+    justify-content: center;
+    .card__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      background-color: #181818;
+      padding: 2rem;
+      text-align: center;
+      .about_image {
+        display: block;
+        width: 250px;
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+        border-radius: 1px;
+        margin: 0 auto;
+        .about--filler{
+          width: 100%;
+        }
+        .about--filler > img {
+          // left: 0;
+          // top: 0%;
+          width: 100%;
+          // height: auto;
+          // position: absolute;
+          // z-index: 0;
+          // margin: 0;
+          // padding: 0;
+          // -webkit-transition: bottom 3s;
+          // -moz-transition: bottom 3s;
+          // -ms-transition: bottom 3s;
+          // -o-transition: bottom 3s;
+          // transition: top 3s;
+          // &:hover {
+          //   top: -300%;
+          //   -webkit-transition: all 3s;
+          //   -moz-transition: all 3s;
+          //   -ms-transition: all 3s;
+          //   -o-transition: all 3s;
+          //   transition: all 3s;
+          // }
+        }
+      }
+      // &:nth-of-type(2) {
+      //   .image {
+      //     img {
+      //       &:hover {
+      //         top: -345%;
+      //       }
+      //     }
+      //   }
+      // }
+      // &:nth-of-type(3) {
+      //   .image {
+      //     img {
+      //       &:hover {
+      //         top: -390%;
+      //       }
+      //     }
+      //   }
+      // }
+    }
+  }
+}
+
+@media screen and (min-width: 280px) and (max-width: 1080px) {
+  #about-sec{
+    margin-bottom: 3rem;
+  }
+  .about--space {
+    .about_container {
+      // margin: 0 10vw;
+      // display: grid;
+      // grid-template-columns: 1fr;
+      display: flex;
+      flex-direction: column;
+      .card__container {
+        padding: 1rem;
+        .about_image {
+          width: 200px;
+          img {
+            &:hover {
+              top: -240% !important;
+            }
+          }
+        }
+        &:nth-of-type(2) {
+          .image {
+            img {
+              &:hover {
+                top: -260%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
